@@ -1,0 +1,38 @@
+{
+  "name": "rangarok-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "GPL-3.0",
+  "private": false,
+  "type": "commonjs",
+  "scripts": {
+    "start": "node build/index.js",
+    "pretsc": "node scripts/js/cleanBuild.mjs",
+    "tsc": "tsc",
+    "dev": "ts-node-dev index.ts",
+    "testformat": "ts-node-dev formatStudent/formatStudent.ts",
+    "lint": "eslint --ext .ts .",
+    "reset": "node build/scripts/ts/resetStuDB.js",
+    "reset:ts": "ts-node scripts/ts/resetStuDB.ts"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-jwt": "^6.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.2",
+    "@types/cors": "^2.8.10",
+    "@types/express": "^4.17.12",
+    "@types/express-jwt": "^6.0.1",
+    "@types/jsonwebtoken": "^8.5.1",
+    "@types/morgan": "^1.9.2",
+    "@typescript-eslint/eslint-plugin": "^4.26.0",
+    "@typescript-eslint/parser": "^4.26.0",
+    "eslint": "^7.27.0",
+    "ts-node-dev": "^1.1.6"
+  }
+}
